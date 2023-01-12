@@ -116,7 +116,7 @@ body {
   transition: 0.5s;
 }
 
-.container .card .content ul li a:hover {
+.container .card .content ul li:hover a {
   color: #ef9a53;
 }
 
