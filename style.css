@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f7f7f7;
+}
+
+.container {
+  position: relative;
+  width: 1000px;
+  margin: 150px auto 0;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-rows: 440px;
+  grid-gap: 40px;
+}
+
+.container .card {
+  position: relative;
+  background: #000;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.container .card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.container .card:hover .img-box {
+  opacity: 0.5;
+}
+
+.container .card .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .card .content {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  bottom: -100%;
+  padding: 20px;
+  padding-top: 60px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.container .card:hover .content {
+  bottom: 0;
+}
+
+.container .card:nth-child(1) .content {
+  background: linear-gradient(0deg, #f55951, transparent);
+}
+
+.container .card:nth-child(2) .content {
+  background: linear-gradient(0deg, #361d32, transparent);
+}
+
+.container .card:nth-child(3) .content {
+  background: linear-gradient(0deg, #7c9299, transparent);
+}
+
+.container .card .content h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+}
+
+.container .card .content h2 span {
+  color: #ef9a53;
+  font-size: 16px;
+}
+
+.container .card .content p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.container .card .content ul {
+  display: flex;
+  margin: 20px 0 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .card .content ul li {
+  list-style: none;
+}
+
+.container .card .content ul li a {
+  color: #fff;
+  padding: 0 10px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    margin: 50px auto 50px;
+    width: initial;
+    grid-template-rows: 400px 400px;
+  }
+  .container .card .content {
+    height: 65%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .container {
+    grid-template-rows: 400px 400px 400px;
+  }
+}
