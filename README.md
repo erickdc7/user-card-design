@@ -1,4 +1,4 @@
-# Card UI Design With Cool Image Hover Effects
-### This design is inspired by this [video](https://youtu.be/JLA0bMMWlfo), which belongs to [Online Tutorials](https://www.youtube.com/@OnlineTutorialsYT).
+# User Card UI Design
+### This design is inspired by the work of [Online Tutorials](https://www.youtube.com/@OnlineTutorialsYT). Click [here](https://youtu.be/JLA0bMMWlfo) to watch the video.
 
 ![preview img](/preview.png)
